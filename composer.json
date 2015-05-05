@@ -1,5 +1,5 @@
 {
-    "name": "ridvanbaluyos/oxford-face",
+    "name": "ridvanbaluyos/face",
     "type": "library",
     "description": "A PHP Library built for the Microsoft's Face API.",
     "keywords": ["php", "library", "face detection", "face api"],
