@@ -1,4 +1,4 @@
-<?php namespace Ridvanbaluyos\Face;
+<?php namespace Ridvanbaluyos;
 /**
  * FaceDetection
  *
@@ -14,7 +14,7 @@ class FaceDetection
 	private $image;
 	private $analyzeFaceLandmarks = false;
 	private $analyzeAge = false;
-	private $analyzeGener = false;
+	private $analyzeGender = false;
 	private $analyzeHeadPose = false;
 
 	/**
