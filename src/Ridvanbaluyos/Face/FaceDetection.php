@@ -1,4 +1,4 @@
-<?php namespace Ridvanbaluyos\FaceDetection;
+<?php namespace Ridvanbaluyos\Face;
 /**
  * FaceDetection
  *
@@ -16,7 +16,7 @@ class FaceDetection
 	private $analyzeAge = false;
 	private $analyzeGener = false;
 	private $analyzeHeadPose = false;
-	
+
 	/**
 	 * Constructor
 	 */
@@ -25,7 +25,7 @@ class FaceDetection
 		$this->url = 'https://api.projectoxford.ai/face/v0/detections';
 		$this->image = $image;
 	}
-	
+
 	/**
 	 * Get all the face/s detected in an image.
 	 *
@@ -39,66 +39,66 @@ class FaceDetection
 			'analyzesHeadPose' => $this->analyzeHeadPose,
 		);
 		$query = http_build_query($params);
-		
+
 		$image = json_encode($this->image);
-		
+
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $this->url . '?' . $query);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $image);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-			'Content-Type: application/json',                                                                                
-			'Content-Length: ' . strlen($image))                                                                       
-		);                                                                                                                     
-			 
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+			'Content-Type: application/json',
+			'Content-Length: ' . strlen($image))
+		);
+
 		$response = curl_exec($ch);
 
 		var_dump($response);
 	}
-	
+
 	/**
 	 * Optional parameter to get face landmarks.
-	 * 
+	 *
 	 */
 	public function analyzeFaceLandmarks() {
 		$this->analyzeFaceLandmarks = 'true';
-		
+
 		return $this;
 	}
-	
+
 	/**
 	 * Optional parameter to get age.
-	 * 
-	 */	
+	 *
+	 */
 	public function analyzeAge() {
 		$this->analyzeAge = 'true';
-		
+
 		return $this;
 	}
-	
+
 	/**
 	 * Optional parameter to get gender.
-	 * 
+	 *
 	 */
 	public function analyzeGender() {
 		$this->analyzeGender = 'true';
-		
+
 		return $this;
 	}
-	
+
 	/**
 	 * Optional parameter to get values of head-pose.
-	 * 
+	 *
 	 */
 	public function analyzeHeadPose() {
 		$this->analyzeHeadPose = 'true';
-		
+
 		return $this;
 	}
-	
+
 	/**
-	 * Alternatively, you can enable all options. 
+	 * Alternatively, you can enable all options.
 	 *
 	 */
 	public function analyzeAll() {
@@ -106,7 +106,7 @@ class FaceDetection
 		$this->analyzeAge = 'true';
 		$this->analyzeGender = 'true';
 		$this->analyzeHeadPose = 'true';
-		
+
 		return $this;
 	}
 }

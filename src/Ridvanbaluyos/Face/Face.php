@@ -1,4 +1,4 @@
-<?php namespace Ridvanbaluyos\FaceDetection;
+<?php namespace Ridvanbaluyos\Face;
 /**
  * Face Abstract Class
  *
@@ -8,5 +8,5 @@
  * @license    MIT
  */
 abstract class Face {
-	
+
 }
