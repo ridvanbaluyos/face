@@ -1,4 +1,4 @@
-<?php namespace Ridvanbaluyos;
+<?php namespace Ridvanbaluyos\Face;
 /**
  * FaceDetection
  *
