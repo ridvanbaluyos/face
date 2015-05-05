@@ -1,4 +1,4 @@
-<?php
+<?php namespace Ridvanbaluyos\FaceDetection
 /**
  * Face Abstract Class
  *
