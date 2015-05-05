@@ -1,0 +1,21 @@
+{
+    "name": "ridvanbaluyos/oxford-face",
+    "type": "library",
+    "description": "A PHP Library built for the Microsoft's Face API.",
+    "keywords": ["php", "library", "face detection", "face api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ridvan Baluyos",
+            "email": "ridvan@baluyos.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ridvanbaluyos\\": "src/Ridvanbaluyos"
+        }
+    }
+}
