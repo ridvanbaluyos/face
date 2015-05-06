@@ -24,7 +24,7 @@ Subscription for Microsoft's Face API. Please follow these [steps](https://www.p
 ### Installation ##
 Open your `composer.json` file and add the following to the `require` key:
 
-    "ridvanbaluyos/face": "v0.5"
+    "ridvanbaluyos/face": "v0.6"
 
 ---
 
