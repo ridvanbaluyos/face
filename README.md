@@ -98,13 +98,13 @@ $face->analyzeHeadPose()->getFaces();
 ```
 
 #### Chaining options
-```
+```php
 $face->analyzeFaceLandmarks()->analyzeAge()->analyzeGender()->analyzeHeadPose()->getFaces();
 
 ```
 
 #### Alternatively, you can analyze all possible options
-```
+```php
 $face->analyzeAll()->getFaces();
 
 ```
