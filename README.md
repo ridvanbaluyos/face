@@ -40,7 +40,7 @@ or
 composer update
 ```
 
-### Add your subscription key in the FaceDetection.php class
+Add your subscription key in the FaceDetection.php class
 ```
     public function __construct($image) {
         $this->subscriptionKey = 'abul3abul3abul3';
