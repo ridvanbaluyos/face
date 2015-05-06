@@ -4,7 +4,7 @@
  *
  * @package    Face
  * @author     Ridvan Baluyos <ridvan@baluyos.net>
- * @link       https://github.com/ridvanbaluyos/msoxford-face
+ * @link       https://github.com/ridvanbaluyos/face
  * @license    MIT
  */
 class FaceDetection
@@ -21,7 +21,7 @@ class FaceDetection
 	 * Constructor
 	 */
 	public function __construct($image) {
-		$this->subscriptionKey = '';
+		$this->subscriptionKey = 'd773cb73078c47b5b80842af29c5c231';
 		$this->url = 'https://api.projectoxford.ai/face/v0/detections';
 		$this->image = $image;
 	}
