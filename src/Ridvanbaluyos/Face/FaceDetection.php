@@ -54,7 +54,12 @@ class FaceDetection
 
 		$response = curl_exec($ch);
 
-		var_dump($response);
+		header("Content-Type: application/json");
+		if (!$response) {
+			echo json_encode(array("statusCode"=>"406", "message"=>"There was no response from the server."));
+		} else {
+			echo $response;
+		}
 	}
 
 	/**
