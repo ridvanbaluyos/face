@@ -41,7 +41,7 @@ composer update
 ```
 
 Add your subscription key in the FaceDetection.php class
-```
+```php
     public function __construct($image) {
         $this->subscriptionKey = 'abul3abul3abul3';
         // ... codes
