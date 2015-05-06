@@ -7,8 +7,8 @@ A PHP Library built for the Microsoft's Face API.
 [![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
 
 ## Table of contents ##
-- [Installation](#installation)
 - [Requirements](#requirements)
+- [Installation](#installation)
 - [Usage](#usage)
     - [Detecting a Face](#detecting-a-face)
     - [Analyzing Face Landmarks](#analyzing-face-landmarks)
@@ -17,6 +17,9 @@ A PHP Library built for the Microsoft's Face API.
     - [Analyzing Head Pose](#analyzing-head-pose)
     - [Chaining options](#chaining-options)
 - [References](#references)
+
+### Requirements ##
+Subscription for Microsoft's Face API. Please follow these [steps](https://www.projectoxford.ai/doc/face/Get-Started/csharp#step1) on how to get a subscription key.
 
 ### Installation ##
 Open your `composer.json` file and add the following to the `require` key:
@@ -36,8 +39,15 @@ or
 ```bash
 composer update
 ```
-### Requirements ##
-Subscription for Microsoft's Face API. Please follow these [steps](https://www.projectoxford.ai/doc/face/Get-Started/csharp#step1) on how to get a subscription key.
+
+### Add your subscription key in the FaceDetection.php class
+```
+    public function __construct($image) {
+        $this->subscriptionKey = 'abul3abul3abul3';
+        // ... codes
+    }
+
+```
 
 
 ### Usage ##
