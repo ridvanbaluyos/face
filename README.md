@@ -99,7 +99,7 @@ $face->analyzeHeadPose()->getFaces();
 
 #### Chaining options
 ```
-$face->analyzeFaceLandmarks()->analyzeAge()->analyzeGender()analyzeHeadPose()->getFaces();
+$face->analyzeFaceLandmarks()->analyzeAge()->analyzeGender()->analyzeHeadPose()->getFaces();
 
 ```
 
