@@ -5,6 +5,7 @@ A PHP Library built for the Microsoft's Face API.
 <br/><br/>
 
 [![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/42b377321bd14833a81d15c88cb82ed1)](https://www.codacy.com/app/ewoklabs/face?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ridvanbaluyos/face&amp;utm_campaign=Badge_Grade)
 
 ## Table of contents ##
 - [Requirements](#requirements)
