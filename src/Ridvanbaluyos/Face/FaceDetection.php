@@ -68,7 +68,7 @@ class FaceDetection
 	 * Optional parameter to get face landmarks.
 	 *
 	 */
-	public function getFaceLandmarks() {
+	public function analyzeFaceLandmarks() {
 		$this->returnFaceLandmarks = 'true';
 
 		return $this;
@@ -78,7 +78,7 @@ class FaceDetection
 	 * Optional parameter to get face attributes.
 	 *
 	 */
-	public function getFaceAttributes() {
+	public function analyzeFaceAttributes() {
 		$this->returnFaceAttributes = 'age,gender,headPose,smile,facialHair,glasses';
 
 		return $this;
@@ -90,8 +90,8 @@ class FaceDetection
 	 *
 	 */
 	public function analyzeAll() {
-		$this->getFaceLandmarks = 'true';
-		$this->getFaceAttributes = 'true';
+		$this->returnFaceLandmarks = 'true';
+		$this->returnFaceAttributes = 'age,gender,headPose,smile,facialHair,glasses';
 
 		return $this;
 	}
