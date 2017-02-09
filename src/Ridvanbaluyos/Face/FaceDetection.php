@@ -16,7 +16,7 @@ class FaceDetection
 	private $image;
 	private $returnFaceId = false;
 	private $returnFaceLandmarks = false;
-	private $returnFaceAttributes = 'age,gender,headPose,smile,facialHair,glasses';
+	private $returnFaceAttributes = '';
 
 	/**
 	 * Constructor
