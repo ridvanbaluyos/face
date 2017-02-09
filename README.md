@@ -1,7 +1,7 @@
 ridvanbaluyos/face
 =======
-A PHP Library built for the Microsoft's Face API.
-> Project Oxford: [Face API](https://www.projectoxford.ai/doc/face/overview)
+A PHP Library built for the Microsoft's Cognitive Services.
+> Cognitive Services: [Face API](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
 <br/><br/>
 
 [![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
@@ -13,19 +13,17 @@ A PHP Library built for the Microsoft's Face API.
 - [Usage](#usage)
     - [Detecting a Face](#detecting-a-face)
     - [Analyzing Face Landmarks](#analyzing-face-landmarks)
-    - [Analyzing Age](#analyzing-age)
-    - [Analyzing Gender](#analyzing-gender)
-    - [Analyzing Head Pose](#analyzing-head-pose)
+    - [Analyzing Face Attributes](#analyzing-face-attributes)
     - [Chaining options](#chaining-options)
 - [References](#references)
 
 ### Requirements ##
-Subscription for Microsoft's Face API. Please follow these [steps](https://www.projectoxford.ai/doc/face/Get-Started/csharp#step1) on how to get a subscription key.
+Kindly subscribe for an API key to [Microsoft's Cognitive Services API page](https://www.microsoft.com/cognitive-services/en-us/sign-up).
 
 ### Installation ##
 Open your `composer.json` file and add the following to the `require` key:
 
-    "ridvanbaluyos/face": "v0.7"
+    "ridvanbaluyos/face": "v1.0"
 
 ---
 
@@ -80,27 +78,15 @@ $face->analyzeFaceLandmarks()->getFaces();
 
 ```
 
-#### Analyzing Age
+#### Analyzing Face Attributes
 ```php
-$face->analyzeAge()->getFaces();
-
-```
-
-#### Analyzing Gender
-```php
-$face->analyzeGender()->getFaces();
-
-```
-
-#### Analyzing Head Pose
-```php
-$face->analyzeHeadPose()->getFaces();
+$face->analyzeFaceAttributes()->getFaces();
 
 ```
 
 #### Chaining options
 ```php
-$face->analyzeFaceLandmarks()->analyzeAge()->analyzeGender()->analyzeHeadPose()->getFaces();
+$face->analyzeFaceLandmarks()->analyzeFaceAttributes()->getFaces();
 
 ```
 
@@ -111,6 +97,6 @@ $face->analyzeAll()->getFaces();
 ```
 
 ## References
-* [Subscription Key Management](https://www.projectoxford.ai/doc/general/subscription-key-mgmt)
-* [Face API Documentation](https://dev.projectoxford.ai/docs/services/54d85c1d5eefd00dc474a0ef/operations/54f0375749c3f70a50e79b82)
-* [How-Old.net](http://how-old.net/)
+* [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/en-us/)
+* [Face API Documentation](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
+* [Face Open API Testing Console](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236/console)

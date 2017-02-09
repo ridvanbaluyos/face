@@ -13,8 +13,11 @@ $image = array(
 // detect face
 $face = new FaceDetection($image);
 
+// face only
+$face->getFaces();
+
 // analyze all
-$face->analyzeAll()->getFaces();
+//$face->analyzeAll()->getFaces();
 
 // analyze chaining
 //$face->analyzeFaceLandmarks()->analyzeFaceAttributes()->getFaces();
