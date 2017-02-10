@@ -7,27 +7,6 @@ A PHP Library built for the Microsoft's Cognitive Services.
 [![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/42b377321bd14833a81d15c88cb82ed1)](https://www.codacy.com/app/ewoklabs/face?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ridvanbaluyos/face&amp;utm_campaign=Badge_Grade)
 
-<div style="margin: 25px;">
-<a href="https://rapidapi.com/package/MicrosoftFaceApi/functions?utm_source=MicrosoftFaceGitHub-PHP&utm_medium=button&utm_content=Vendor_GitHub" style="
-    all: initial;
-    background-color: #498FE1;
-    border-width: 0;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: white;
-    font-family: 'Helvetica';
-    font-size: 12pt;
-    background-image: url(https://scdn.rapidapi.com/logo-small.png);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 10px;
-    padding-left: 44px;
-    cursor: pointer;">
-  Run now on <b>RapidAPI</b>
-</a>
-</div>
-
 ## Table of contents ##
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -121,3 +100,4 @@ $face->analyzeAll()->getFaces();
 * [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/en-us/)
 * [Face API Documentation](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
 * [Face Open API Testing Console](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236/console)
+* [Test on RapidAPI](https://rapidapi.com/package/MicrosoftFaceApi/functions?utm_source=MicrosoftFaceGitHub-PHP&utm_medium=button&utm_content=Vendor_GitHub)
