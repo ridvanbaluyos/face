@@ -4,8 +4,7 @@ A PHP Library built for the Microsoft's Cognitive Services.
 > Cognitive Services: [Face API](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
 <br/><br/>
 
-[![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/42b377321bd14833a81d15c88cb82ed1)](https://www.codacy.com/app/ewoklabs/face?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ridvanbaluyos/face&amp;utm_campaign=Badge_Grade)
+[![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Build Status](https://scrutinizer-ci.com/g/ridvanbaluyos/face/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ridvanbaluyos/face/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ridvanbaluyos/sms-providers/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ridvanbaluyos/face/?branch=master) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
 
 ## Table of contents ##
 - [Requirements](#requirements)
