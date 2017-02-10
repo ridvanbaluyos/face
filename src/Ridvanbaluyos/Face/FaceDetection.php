@@ -1,5 +1,7 @@
 <?php 
 namespace Ridvanbaluyos\Face;
+
+use Noodlehaus\Config as Config;
 /**
  * Microsoft Cognitive Services- Face API
  * https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview
@@ -22,8 +24,9 @@ class FaceDetection
 	 * Constructor
 	 */
 	public function __construct($image) {
-		$this->subscriptionKey = '';
-		$this->url = 'https://westus.api.cognitive.microsoft.com/face/v1.0/detect';
+		$conf = Config::load(__DIR__ . '/config.json');
+		$this->subscriptionKey = $conf['subscriptionKey'];
+		$this->url = $conf['url'];
 		$this->image = $image;
 	}
 
@@ -53,15 +56,9 @@ class FaceDetection
 			'Content-Length: ' . strlen($image)
 			)
 		);
-
-		$response = curl_exec($ch);;
-
-		header("Content-Type: application/json");
-		if (!$response) {
-			echo json_encode(array("statusCode"=>"406", "message"=>"There was no response from the server."));
-		} else {
-			echo $response;
-		}
+		$response = curl_exec($ch);
+		
+		return $response;
 	}
 
 	/**
@@ -83,7 +80,6 @@ class FaceDetection
 
 		return $this;
 	}
-
 
 	/**
 	 * Alternatively, you can enable all options.

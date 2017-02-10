@@ -14,7 +14,7 @@ $image = array(
 $face = new FaceDetection($image);
 
 // face only
-$face->getFaces();
+$result = $face->getFaces();
 
 // analyze all
 //$face->analyzeAll()->getFaces();
@@ -27,3 +27,5 @@ $face->getFaces();
 
 // analyze face landmarks
 //$face->analyzeFaceLandmarks()->getFaces();
+
+echo $result;

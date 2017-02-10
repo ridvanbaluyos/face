@@ -10,6 +10,7 @@ A PHP Library built for the Microsoft's Cognitive Services.
 ## Table of contents ##
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Configuration](#configuration)
 - [Usage](#usage)
     - [Detecting a Face](#detecting-a-face)
     - [Analyzing Face Landmarks](#analyzing-face-landmarks)
@@ -17,13 +18,13 @@ A PHP Library built for the Microsoft's Cognitive Services.
     - [Chaining options](#chaining-options)
 - [References](#references)
 
-### Requirements ##
+### Requirements ###
 Kindly subscribe for an API key to [Microsoft's Cognitive Services API page](https://www.microsoft.com/cognitive-services/en-us/sign-up).
 
-### Installation ##
+### Installation ###
 Open your `composer.json` file and add the following to the `require` key:
 
-    "ridvanbaluyos/face": "v1.0"
+    "ridvanbaluyos/face": "v1.1"
 
 ---
 
@@ -39,12 +40,13 @@ or
 composer update
 ```
 
-Add your subscription key in the FaceDetection.php class
-```php
-    public function __construct($image) {
-        $this->subscriptionKey = 'abul3abul3abul3';
-        // ... codes
-    }
+### Configuration ###
+Add your subscription key in `src/Ridvanbaluyos/Face/config.json` file
+```json
+{
+	"url" : "https://westus.api.cognitive.microsoft.com/face/v1.0/detect",
+	"subscriptionKey" : "zWwPD7BGWYEArX6u6QxvS25TTsNge2Qw"
+}
 
 ```
 
@@ -100,3 +102,4 @@ $face->analyzeAll()->getFaces();
 * [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/en-us/)
 * [Face API Documentation](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
 * [Face Open API Testing Console](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236/console)
+* [Test on RapidAPI](https://rapidapi.com/package/MicrosoftFaceApi/functions?utm_source=MicrosoftFaceGitHub-PHP&utm_medium=button&utm_content=Vendor_GitHub)
