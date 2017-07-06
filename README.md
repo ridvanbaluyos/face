@@ -4,6 +4,7 @@ A PHP Library built for the Microsoft's Cognitive Services.
 > Cognitive Services: [Face API](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
 <br/><br/>
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d0fa17a0dea2451d83ce90186070fc8a)](https://www.codacy.com/app/ridvanbaluyos/face?utm_source=github.com&utm_medium=referral&utm_content=ridvanbaluyos/face&utm_campaign=badger)
 [![Latest Stable Version](https://poser.pugx.org/ridvanbaluyos/face/v/stable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Latest Unstable Version](https://poser.pugx.org/ridvanbaluyos/face/v/unstable.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Total Downloads](https://poser.pugx.org/ridvanbaluyos/face/downloads.svg)](https://packagist.org/packages/ridvanbaluyos/face) [![Build Status](https://scrutinizer-ci.com/g/ridvanbaluyos/face/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ridvanbaluyos/face/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ridvanbaluyos/face/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ridvanbaluyos/face/?branch=master) [![License](https://poser.pugx.org/ridvanbaluyos/face/license.svg)](https://packagist.org/packages/ridvanbaluyos/face)
 
 ## Table of contents ##
